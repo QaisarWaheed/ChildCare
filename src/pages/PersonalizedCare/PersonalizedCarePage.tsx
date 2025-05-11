@@ -12,17 +12,16 @@ import {
   Input,
   List,
   Menu,
+  SimpleGrid,
 } from "@mantine/core";
-import SideBar from "../../LayOuts/SideBar";
-import IconList from "../../assets/icons/IconList";
+
 import IconSearch from "../../assets/icons/IconSearch";
 
 const PersonalizedCarePage = () => {
   return (
     <Stack>
-      <Group gap={100} w={"100%"}>
-        <SideBar></SideBar>
-        <Stack justify="space-between" w={"80%"}>
+      <Group gap={100}>
+        <Stack justify="space-between">
           <Group justify="space-between">
             <Stack gap={0}>
               <Title>DashBoard</Title>
@@ -87,145 +86,140 @@ const PersonalizedCarePage = () => {
             <Button variant="default">Language</Button>
             <Button variant="default">Social-Emotional</Button>
           </Button.Group>
-
-          <Stack>
-            <Group>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-            </Group>
-            <Group>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-              <Card>
-                <Stack>
-                  <Group justify="space-between">
-                    <Stack gap={0}>
-                      <Title order={5}>Emma</Title>
-                      <Text>2 years</Text>
-                      <Text>Plan Type: Comprehensive Development </Text>
-                    </Stack>
-                    <Badge color="Blue">Active</Badge>
-                  </Group>
-                  <Group justify="space-between">
-                    <Text>Last Updated: </Text>
-                    <Text>2 Days ago </Text>
-                  </Group>
-                  <Group justify="space-between">
-                    <Button variant="outline" color="white">
-                      View Details
-                    </Button>
-                    <Button>Update Plan</Button>
-                  </Group>
-                </Stack>
-              </Card>
-            </Group>
-          </Stack>
+          <SimpleGrid cols={3}>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+            <Card>
+              <Stack>
+                <Group justify="space-between">
+                  <Stack gap={0}>
+                    <Title order={5}>Emma</Title>
+                    <Text>2 years</Text>
+                    <Text>Plan Type: Comprehensive Development </Text>
+                  </Stack>
+                  <Badge color="Blue">Active</Badge>
+                </Group>
+                <Group justify="space-between">
+                  <Text>Last Updated: </Text>
+                  <Text>2 Days ago </Text>
+                </Group>
+                <Group justify="space-between">
+                  <Button variant="outline" color="white">
+                    View Details
+                  </Button>
+                  <Button>Update Plan</Button>
+                </Group>
+              </Stack>
+            </Card>
+          </SimpleGrid>
 
           <Card>
             <Stack>

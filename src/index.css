@@ -1,4 +1,4 @@
-:root[data-mantine-color-scheme="dark"] {
+:root[data-mantine-color-scheme="light"] {
   --mantine-color-body: #0a0f1c !important;
   --app-shell-border-color: red !important;
 }

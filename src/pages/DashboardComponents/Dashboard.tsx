@@ -16,7 +16,6 @@ const Dashboard = () => {
   return (
     <Stack>
       <Group gap={100}>
-        <SideBar></SideBar>
         <Stack justify="space-between">
           <Group justify="space-between">
             <Stack gap={0}>

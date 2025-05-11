@@ -13,7 +13,7 @@ import {
   List,
   Menu,
 } from "@mantine/core";
-import SideBar from "../../LayOuts/SideBar";
+
 import IconList from "../../assets/icons/IconList";
 import IconSearch from "../../assets/icons/IconSearch";
 
@@ -21,7 +21,6 @@ const DevelopmentalScreening = () => {
   return (
     <Stack>
       <Group gap={100} w={"100%"}>
-        <SideBar></SideBar>
         <Stack justify="space-between" w={"80%"}>
           <Group justify="space-between">
             <Stack gap={0}>

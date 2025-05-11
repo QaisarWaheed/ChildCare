@@ -4,15 +4,23 @@ import IconArchive from "../assets/icons/IconArchive";
 import IconPaperClip from "../assets/icons/IconPaperClip";
 import IconUser from "../assets/icons/IconUser";
 import IconSettings from "../assets/icons/IconSettings";
-import IconArrowRight from "../assets/icons/IconArrowRight";
 
 const SideBar = () => {
   return (
-    <Stack w={"fit-content"} bg={"gray"} h={"100vh"}>
+    <Stack
+      w={"fit-content"}
+      bg={"gray"}
+      h={"100vh"}
+      style={{
+        position: "sticky",
+        top: 0,
+        left: 0,
+      }}
+    >
       <Stack m={"xs"} gap={0}>
         <Group>
           <IconArchive />
-          <Title order={4}>PediCare</Title>
+          <Title order={4}>Pedi Care</Title>
         </Group>
         <Text> Child Development platform</Text>
       </Stack>
@@ -24,13 +32,6 @@ const SideBar = () => {
           <IconPaperClip />
           <Text>
             <Anchor c="white">Dashboard</Anchor>
-          </Text>
-        </Group>
-
-        <Group align="center">
-          <IconUser />
-          <Text>
-            <Anchor c="white">Child Profiles</Anchor>
           </Text>
         </Group>
       </Stack>
@@ -48,13 +49,6 @@ const SideBar = () => {
           <IconUser />
           <Text>
             <Anchor c="white">Care Plans</Anchor>
-          </Text>
-        </Group>
-
-        <Group align="center">
-          <IconUser />
-          <Text>
-            <Anchor c="white">Parenting Guidance</Anchor>
           </Text>
         </Group>
 
@@ -105,20 +99,7 @@ const SideBar = () => {
           </Text>
         </Group>
 
-        <Group align="center">
-          <IconUser /> Data Security
-          <Text>
-            <Anchor c="white"></Anchor>
-          </Text>
-        </Group>
-        <Group align="center">
-          <IconArrowRight />
-          <Text>
-            <Anchor c="white">Integrations</Anchor>
-          </Text>
-        </Group>
         <Group>
-          {" "}
           <IconSettings />
           <Text>
             <Anchor c="white">Settings</Anchor>
