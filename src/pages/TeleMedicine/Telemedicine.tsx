@@ -1,22 +1,6 @@
-import {
-  Card,
-  Text,
-  Group,
-  Stack,
-  Title,
-  Button,
-  Divider,
-  Badge,
-  ProgressSection,
-  Progress,
-  Input,
-  Menu,
-  SimpleGrid,
-  Image,
-} from "@mantine/core";
+import { Card, Text, Group, Stack, Title, Button, Image } from "@mantine/core";
 
-import PastSessions from "./PastSesions";
-import Recordings from "./Recordings";
+import UpcomingSessions from "./UpcomingSessions";
 
 const Telemedicine = () => {
   return (
@@ -66,10 +50,8 @@ const Telemedicine = () => {
       </Group>
       <Button.Group>
         <Button variant="default">Upcoming Sessions</Button>
-        <Button variant="default">Past Sessions</Button>
-        <Button variant="default">Recordings </Button>
       </Button.Group>
-      <Recordings />
+      <UpcomingSessions />
       <Card>
         <Stack>
           <Stack gap={25}>

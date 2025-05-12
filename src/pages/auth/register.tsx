@@ -108,7 +108,7 @@ const Register = () => {
                 navigate("/dashboard");
               }}
             >
-              Login
+              Signup
             </Button>
             <Stack align="center">
               <Text>
