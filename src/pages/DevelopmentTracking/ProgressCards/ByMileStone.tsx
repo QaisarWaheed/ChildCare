@@ -4,11 +4,9 @@ import {
   Title,
   Text,
   Group,
-  SimpleGrid,
   Badge,
   Progress,
   Button,
-  parseStyleProps,
 } from "@mantine/core";
 
 interface byMileStone {
@@ -26,7 +24,6 @@ const ByMileStone = (props: byMileStone) => {
 
         <Card>
           <Group justify="space-between">
-            {" "}
             <Title order={4}>{props.text}</Title>
             <Badge variant="outline">78/95 achieved</Badge>
           </Group>
