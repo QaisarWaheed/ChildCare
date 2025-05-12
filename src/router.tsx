@@ -1,4 +1,4 @@
-import { BrowserRouter, createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router";
 import Dashboard from "./pages/DashboardComponents/Dashboard";
 import DevelopmentalScreening from "./pages/DevelopMental Screening/DevelopmentalScreening";
 import PersonalizedCarePage from "./pages/PersonalizedCare/PersonalizedCarePage";
@@ -8,6 +8,10 @@ import Telemedicine from "./pages/TeleMedicine/Telemedicine";
 import Register from "./pages/auth/register";
 import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
+
+import RecordingPage from "./pages/TeleMedicine/Recordings";
+import PastSessionsPage from "./pages/TeleMedicine/PastSesions";
+import UserProfile from "./pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,18 @@ const router = createBrowserRouter([
       {
         path: "/telemedicine",
         element: <Telemedicine></Telemedicine>,
+      },
+      {
+        path: "/recordings",
+        element: <RecordingPage></RecordingPage>,
+      },
+      {
+        path: "/Past-Sessions",
+        element: <PastSessionsPage></PastSessionsPage>,
+      },
+      {
+        path: "/User-profile",
+        element: <UserProfile></UserProfile>,
       },
     ],
   },
